@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Init') {
+            steps {
+                bat "git clone https://github.com/Aminemgl/final-selenium-mohamedamine.git"
+            }
+        }
+        stage('Run') {
+            steps {
+                 echo "Testing..."
+            }
+        }
+    }
+
+}
